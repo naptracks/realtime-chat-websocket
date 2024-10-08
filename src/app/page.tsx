@@ -20,8 +20,8 @@ const Home = () => {
     },
   })
 
-  const onSubmit = (data: string) => {
-    console.log(data)
+  function onSubmit(values: z.infer<typeof formSchema>) {
+    console.log(values)
   }
 
   return (
